@@ -121,6 +121,8 @@ section{padding-block:64px}
 .progs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .prog{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;display:grid;gap:10px;align-content:start;min-width:0;box-shadow:0 8px 22px -14px rgba(74,46,34,.28)}
 .swatch{height:8px;border-radius:999px}
+.prog-ph{margin:-6px -6px 4px}
+.prog-ph img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 78%;border-radius:16px}
 .prog .tag{font-size:.85rem;font-weight:700;color:var(--muted)}
 .prog p{color:var(--muted)}
 .prog ul{margin:0;padding-left:1.1em;color:var(--muted);display:grid;gap:4px}
