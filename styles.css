@@ -231,6 +231,22 @@ section{padding-block:64px}
 @media (max-width:760px){.merch{grid-template-columns:1fr 1fr}.merch-info{grid-template-columns:1fr}}
 .dcf{display:flex;align-items:center;gap:14px}
 .dcf-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.ev-slider{margin-top:20px}
+.ev-nav{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin-bottom:10px}
+.ev-hint{margin-right:auto;font-size:.85rem;font-weight:700;color:var(--muted)}
+.ev-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:1.1rem;font-weight:800;cursor:pointer}
+.ev-btn:hover{border-color:var(--leaf);color:var(--leaf)}
+.ev-btn:disabled{opacity:.35;cursor:default}
+.ev-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 32px)/3);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px;overscroll-behavior-x:contain}
+.ev-gallery::-webkit-scrollbar{display:none}
+.ev-gallery>figure{scroll-snap-align:start}
+@media (max-width:900px){.ev-gallery{grid-auto-columns:calc((100% - 16px)/2.15)}}
+@media (max-width:560px){.ev-gallery{grid-auto-columns:84%;gap:12px}.ev-btn{display:none}}
+.ev-ph img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
+.ev-ph.tall img{object-position:center 40%}
+.ev-ph figcaption{display:grid;gap:2px;padding:8px 2px 0;font-size:.9rem;line-height:1.35}
+.ev-ph figcaption b{color:var(--ink)}
+.ev-ph figcaption span{color:var(--muted)}
 .ws-photos{margin-top:20px}
 .dcf-ph{position:relative;margin:0}
 .ph-logo.logo-card{position:absolute;top:10px;left:10px;z-index:2;width:52px;box-shadow:0 0 0 2px rgba(255,255,255,.9),0 4px 12px rgba(46,28,20,.25)}
