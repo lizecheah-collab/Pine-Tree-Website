@@ -286,7 +286,8 @@ section{padding-block:64px}
 /* founder */
 .fd{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:40px;align-items:center}
 .fd-main{display:grid;gap:24px;min-width:0}
-.fd-photo{margin:0;border-radius:28px;overflow:hidden;background:#C9C6CB;box-shadow:0 10px 30px rgba(46,28,20,.12)}
+.fd-photo{position:relative;margin:0;border-radius:28px;overflow:hidden;background:#C9C6CB;box-shadow:0 10px 30px rgba(46,28,20,.12)}
+.fd-photo .ph-logo.logo-card{width:64px;top:14px;left:14px}
 .fd-photo img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:top}
 .fd-intro{display:grid;gap:10px;min-width:0}
 .fd-roles{overflow:hidden}
