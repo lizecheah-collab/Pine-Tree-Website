@@ -286,6 +286,12 @@ section{padding-block:64px}
 .gcard .btn{justify-self:start;margin-top:6px}
 @media (max-width:760px){.grow{grid-template-columns:1fr}}
 .comp{margin-top:24px;display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;background:var(--sunken);border-radius:22px;padding:24px}
+.comp-slider{grid-column:1/-1;margin-top:4px}
+.comp-slider .ev-gallery{grid-auto-columns:calc((100% - 48px)/4)}
+.comp-slider .ev-ph img{aspect-ratio:1/1}
+.comp-slider .ev-ph.tall img{object-position:center 35%}
+@media (max-width:900px){.comp-slider .ev-gallery{grid-auto-columns:calc((100% - 16px)/2.3)}}
+@media (max-width:560px){.comp-slider .ev-gallery{grid-auto-columns:72%}}
 .comp-intro{display:grid;gap:8px;min-width:0}
 .comp-intro p{color:var(--muted)}
 .comp-types{display:grid;gap:10px}
