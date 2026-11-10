@@ -205,7 +205,10 @@ section{padding-block:64px}
 .ws>div:first-child{display:flex;flex-direction:column;min-width:0;padding-bottom:24px}
 @media (max-width:760px){.ws>div:first-child{padding-bottom:0}}
 .ws>.partner{display:flex;flex-direction:column}
-.ws>.partner .dcf-photos{margin-top:auto;padding-top:8px}
+.ws>.partner .dcf-photos{flex:1;margin-top:6px;padding-top:0;min-height:0}
+.ws>.partner .dcf-ph{height:100%}
+.ws>.partner .dcf-photos img{height:100%;min-height:170px;aspect-ratio:auto}
+@media (max-width:760px){.ws>.partner .dcf-ph{height:auto}.ws>.partner .dcf-photos img{height:auto;min-height:0;aspect-ratio:4/3}}
 .ws-list{display:flex;flex-wrap:wrap;gap:8px}
 .ws-list .chip{background:var(--surface);border:1px solid var(--line)}
 .partner{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;display:grid;gap:10px}
