@@ -230,6 +230,8 @@ section{padding-block:64px}
 .tag-soon{background:var(--golden);color:#2E1C14}
 @media (max-width:760px){.merch{grid-template-columns:1fr 1fr}.merch-info{grid-template-columns:1fr}}
 .dcf{display:flex;align-items:center;gap:14px}
+.dcf-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.dcf-photos img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:16px}
 .dcf img{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 2px var(--line)}
 .coll{display:grid;gap:16px;margin-bottom:22px}
 .coll-head{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
