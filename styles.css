@@ -124,7 +124,7 @@ section{padding-block:64px}
 .prog.has-photo{position:relative;overflow:hidden;min-height:400px;align-content:end;border:0;padding:22px;isolation:isolate}
 .prog.has-photo .prog-ph{position:absolute;inset:0;margin:0;z-index:-1}
 .prog.has-photo .prog-ph{overflow:hidden}
-.prog.has-photo .prog-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 70%;transform:scale(1.35);transform-origin:50% 100%}
+.prog.has-photo .prog-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 70%;transform:scale(var(--z,1.35));transform-origin:50% var(--oy,100%)}
 .prog.has-photo .prog-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,18,12,.9) 0%,rgba(30,18,12,.6) 26%,rgba(30,18,12,0) 46%)}
 .prog.has-photo h3,.prog.has-photo p{color:#fff}
 .prog.has-photo p{opacity:.92}
@@ -287,7 +287,6 @@ section{padding-block:64px}
 .fd{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:40px;align-items:center}
 .fd-main{display:grid;gap:24px;min-width:0}
 .fd-photo{position:relative;margin:0;border-radius:28px;overflow:hidden;background:#C9C6CB;box-shadow:0 10px 30px rgba(46,28,20,.12)}
-.fd-photo .ph-logo.logo-card{width:64px;top:14px;left:14px}
 .fd-photo img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:top}
 .fd-intro{display:grid;gap:10px;min-width:0}
 .fd-roles{overflow:hidden}
