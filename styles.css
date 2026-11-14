@@ -390,3 +390,10 @@ html{scroll-behavior:smooth}
 .faq summary::after{content:"+";font-family:var(--display);font-size:1.4rem;line-height:1;color:var(--leaf);flex:none;transition:transform .2s}
 .faq details[open] summary::after{transform:rotate(45deg)}
 .faq details p{margin:0 0 16px;color:var(--muted);max-width:68ch}
+
+/* 404 */
+.nf{padding-block:56px 72px;text-align:center}
+.nf .wrap{display:grid;justify-items:center;gap:12px}
+.nf-logo{width:120px}
+.nf .muted{max-width:46ch}
+.nf-links{justify-content:center;margin-top:8px}
