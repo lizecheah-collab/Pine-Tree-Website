@@ -1,0 +1,16 @@
+{
+  "name": "Pine Tree Learning Hub",
+  "short_name": "Pine Tree",
+  "description": "Kids clay art and drawing classes in Johor Bahru, ages 4 to 12.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFF8EC",
+  "theme_color": "#5A7520",
+  "lang": "en-MY",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
