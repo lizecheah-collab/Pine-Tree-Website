@@ -225,7 +225,7 @@ section{padding-block:64px}
 .plogo img{position:absolute;inset:16%;width:68%;height:68%;object-fit:contain}
 .plogo span.fill img{inset:0;width:100%;height:100%;object-fit:cover}
 .plogo figcaption{font-size:.8rem;font-weight:700;color:var(--muted);text-align:center;line-height:1.3}
-@media (max-width:440px){.plogos{grid-template-columns:repeat(3,1fr);gap:16px 8px}.plogo figcaption{font-size:.72rem}}
+@media (max-width:440px){.plogos{grid-template-columns:repeat(3,1fr);gap:16px 8px}.plogo figcaption{font-size:.76rem}}
 
 .pgroups{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .pgroup{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;gap:10px;align-content:start}
@@ -356,7 +356,7 @@ footer .brand .mark{width:32px;height:32px}
 /* multi-page */
 html{scroll-behavior:smooth}
 .crumb{padding-top:18px}
-.crumb a{font-weight:800;text-decoration:none;color:var(--muted);font-size:.92rem}
+.crumb a{display:inline-block;padding:10px 12px 10px 0;margin:-10px 0;font-weight:800;text-decoration:none;color:var(--muted);font-size:.92rem}
 .crumb a:hover{color:var(--ink)}
 .crumb + section{padding-top:28px}
 .pstrip{margin-top:40px;display:grid;gap:16px}
