@@ -397,3 +397,9 @@ html{scroll-behavior:smooth}
 .nf-logo{width:120px}
 .nf .muted{max-width:46ch}
 .nf-links{justify-content:center;margin-top:8px}
+
+/* google rating chip */
+.rating-chip{text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line)}
+.rating-chip .stars{color:#E8A317;letter-spacing:1px}
+.rating-chip b{font-weight:800}
+.hrs{font-weight:700;color:var(--ink)}
