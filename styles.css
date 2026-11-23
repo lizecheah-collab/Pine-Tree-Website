@@ -92,7 +92,7 @@ nav.main a.active,.subnav a.active{color:var(--ink);font-weight:800;border-botto
 .logo-stage::before{content:"";position:absolute;inset:4% 2% 6% 4%;border-radius:58% 42% 55% 45%/50% 60% 40% 50%;background:var(--sage);opacity:.45}
 .logo-stage::after{content:"";position:absolute;width:34%;height:26%;right:0;bottom:4%;border-radius:58% 42% 55% 45%/50% 60% 40% 50%;background:var(--apricot)}
 .logo-card{position:relative;z-index:1;width:72%;aspect-ratio:1/1;border-radius:50%;background:#fff url("images/logo-card.png") center/88% no-repeat;box-shadow:0 0 0 4px var(--surface),0 18px 40px -20px rgba(74,46,34,.45)}
-@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-block:32px 44px}.logo-stage{max-width:300px;width:100%;margin:0 auto;grid-row:1}}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-block:32px 44px}.logo-stage{max-width:210px;width:100%;margin:0 auto;grid-row:1}}
 
 section{padding-block:64px}
 .band{background:var(--surface)}
@@ -421,3 +421,14 @@ html{scroll-behavior:smooth}
 .maps-wrap>summary::-webkit-details-marker{display:none}
 .maps-wrap>summary:hover{background:rgba(255,255,255,.24)}
 @media (max-width:600px){.comp-types div{padding:10px 14px}.comp-types span{font-size:.88rem}}
+
+/* tidy 2: compact rows on phones */
+@media (max-width:600px){
+  .ws-list{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-16px;padding-right:16px;-webkit-overflow-scrolling:touch}
+  .ws-list::-webkit-scrollbar{display:none}
+  .ws-list .chip{flex:none;white-space:nowrap}
+  .comp-types{grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:10px;margin-right:-24px;padding-right:24px}
+  .comp-types::-webkit-scrollbar{display:none}
+  .comp-types div{scroll-snap-align:start}
+  .plogos-strip figure:nth-child(n+5){display:none}
+}
